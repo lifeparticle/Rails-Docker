@@ -69,4 +69,4 @@ docker-compose run web rake db:create
 docker compose up
 ```
 
-View at: http://localhost:4567
+View at: http://localhost:3000/
