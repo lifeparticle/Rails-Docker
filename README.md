@@ -11,7 +11,6 @@ brew install nvm
 nvm install node
 echo 'export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"' >> ~/.zshrc
-nvm install node
 ```
 
 3. yarn
@@ -31,8 +30,10 @@ Create a new rails application
 ```
 brew services start postgresql
 # brew services stop postgresql
-# \du
+
+psql postgres
 CREATE ROLE postgres WITH LOGIN SUPERUSER PASSWORD 'password';
+# \du
 ```
 
 2. Create the app
